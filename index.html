@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login para Mapas ArcGIS</title>
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+    <div class="overlay">
+        <form>
+            <div class="con">
+                <header class="head-form">
+                    <h2>Log In</h2>
+                    <p>Ingresa tu usuario y contraseña para acceder a los mapas</p>
+                </header>
+                <br>
+                <div class="field-set">
+                    <!-- Username -->
+                    <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <input class="form-input" id="txt-input" type="text" placeholder="Usuario" required>
+                    <br>
+                    <!-- Password -->
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="form-input" type="password" placeholder="Contraseña" id="pwd" name="password" required>
+                    <!-- Show/hide password -->
+                    <span>
+                        <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
+                    </span>
+                    <br>
+                    <!-- Log In button -->
+                    <button class="log-in" type="button" onclick="login()"> Log In </button>
+                </div>
+                <div class="other">
+                    <button class="btn submits frgt-pass">Forgot Password</button>
+                    <button class="btn submits sign-up">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- JavaScript externo -->
+    <script src="index.js"></script>
+</body>
+</html>
